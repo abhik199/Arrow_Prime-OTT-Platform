@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style></style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+ 
+      <div class="logo text-center">
+       
+      </div>
+      <div class="wrapper">
+        <div class="inner-warpper text-center">
+          <%
+          if(errorMsg !== null && errorMsg !==''){
+          %>
+          <div class="alert alert-primary" class="alert"><%= errorMsg%></div>
+          <%    
+          }
+          %>  
+
+          <h2 class="title">Admin Login</h2>
+          
+
+          <form action="/" method="post"  id="formvalidate">
+            <div class="input-group">
+              <label class="palceholder" for="userName">User Name</label>
+              <input class="form-control" name="username" id="userName" type="text" placeholder="" />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="palceholder" for="userPassword">Password</label>
+              <input class="form-control" value="" name="password" id="userPassword" type="password" placeholder="" />
+              <span class="lighting"></span>
+            </div>
+
+            <button type="submit"  id="login">Login</button>
+            <div class="clearfix supporter">
+              <div class="pull-left remember-me">
+                <input value="" id="rememberMe" type="checkbox">
+                <label for="rememberMe">Remember Me</label>
+              </div>
+              <a class="forgot pull-right" href="forgot_password">Forgot Password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+     
+        
+
+      <!-- you don't need that :)  -->
+      <!-- <div class="direction">
+  Type something in input and click submit to see the effect
+</div> -->
+      <!-- partial -->
+      <script src="/assets/js/atrana.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
+      <script src="js/script.js"></script>
+
+</body>
+
+</html>

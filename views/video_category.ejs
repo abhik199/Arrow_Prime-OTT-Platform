@@ -1,0 +1,391 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Arrow Prime OOT</title>
+
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="/assets/modules/bootstrap-5.1.3/css/bootstrap.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<!-- FontAwesome CSS-->
+	
+	<!-- Boxicons CSS-->
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Apexcharts  CSS -->
+	<!-- <link rel="stylesheet" href="assets/modules/apexcharts/apexcharts.css"> -->
+</head>
+
+<body>
+
+	<!--Topbar -->
+
+
+	<!--Sidebar-->
+	<div class="sidebar transition overlay-scrollbars animate__animated  animate__slideInLeft">
+		<div class="sidebar-content">
+			<div id="sidebar">
+
+				<!-- Logo -->
+				<div class="logo">
+					<h2 class="mb-0"><img src="/assets/images/logo.png"> Arrow Prime</h2>
+				</div>
+
+				<ul class="side-menu">
+					<li>
+						<a href="dashboard" class="active">
+							<i class='bx bxs-dashboard icon' ></i> Dashboard
+						</a>
+					</li>
+					<li>
+						<a href="user">
+							<i class='bx bxs-meh-blank icon'></i> 
+							User
+						
+						</a>
+					</li>
+	
+					<!-- TV category -->
+					<li>
+						<a href="tv_category">
+							<i class='bx bxs-meh-blank icon'></i> 
+							TV Category
+						</a>
+					</li>
+	
+					<!-- Tv channels -->
+	
+					<li>
+						<a href="tv_channels">
+							<i class='fa fa-th icon' ></i> 
+							 TV Channels
+							<i class='bx bx-chevron-right icon-right' ></i>
+						</a>
+						
+					</li>
+					<li>
+						<a href="manage_video">
+							<i class='bx bxs-meh-blank icon'></i> 
+							 Manage Video
+						</a>
+					</li>
+					<li>
+						<a href="video_category">
+							<i class='fa fa-th icon' ></i> 
+							Video Category
+							<i class='bx bx-chevron-right icon-right' ></i>
+						</a>
+						
+					</li>
+					<li>
+						<a href="manage_series">
+							<i class='fa fa-th icon' ></i> 
+							Series
+							<i class='bx bx-chevron-right icon-right' ></i>
+						</a>
+						
+					</li>
+	
+	
+					<li>
+						<a href="notification">
+							<i class='bx bxs-meh-blank icon'></i> 
+							Notification
+						</a>
+					</li>
+					<li>
+						<a href="price">
+							<i class='bx bxs-meh-blank icon'></i> 
+							Manage Price
+						</a>
+					</li>
+					
+					<li>
+						<a href="advertisement">
+							<i class='bx bxs-meh-blank icon'></i> 
+							Advertisement
+						</a>
+					</li>
+					<li>
+						<a href="contact">
+							<i class='bx bxs-meh-blank icon'></i> 
+							Client Enquiry
+						</a>
+					</li>
+					<li>
+						<a href="feedback">
+							<i class='bx bxs-meh-blank icon'></i> 
+							Feedback
+						</a>
+					</li>
+							<a href="logOut">
+								<i class='bx bxs-meh-blank icon'></i> 
+								Logout
+							</a>
+						</li>
+				</ul>
+
+
+
+			</div>
+		</div>
+	</div><!-- End Sidebar-->
+
+
+	<div class="sidebar-overlay"></div>
+
+
+	<!--Content Start-->
+
+	<!-- <div class="content-header">
+				<h1>Dashboard</h1>
+				<p></p>
+			</div>
+			
+			<div class="row">
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="fas fa-inbox icon-home bg-primary text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>VIDEO</p>
+									<h5>15</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="fas fa-clipboard-list icon-home bg-success text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>USERS</p>
+									<h5>10</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="fas fa-chart-bar  icon-home bg-info text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>ADMIN</p>
+									<h5>0</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="fas fa-id-card  icon-home bg-warning text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>Employes</p>
+									<h5>256</h5>
+								</div>
+							</div>
+						</div> -->
+
+	<!-- <div class="col-md-6">
+					<div class="card">
+						<div class="card-header">
+						</div>
+						<div class="card-body">
+							<div id="columnchart"></div>
+						</div>
+					</div>
+				</div> -->
+
+	<!-- <div class="col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<h4>Recent Messages</h4>
+						</div>
+						<div class="card-body pb-4">
+							<div class="recent-message d-flex px-4 py-3">
+								<div class="avatar avatar-lg">
+									<img src="assets/images/message/4.jpg">
+								</div>
+								<div class="name ms-4">
+									<h5 class="mb-1">Hank Schrader</h5>
+									<h6 class="text-muted mb-0">@johnducky</h6>
+								</div>
+							</div>
+							<div class="recent-message d-flex px-4 py-3">
+								<div class="avatar avatar-lg">
+									<img src="assets/images/message/5.jpg">
+								</div>
+								<div class="name ms-4">
+									<h5 class="mb-1">Dean Winchester</h5>
+									<h6 class="text-muted mb-0">@imdean</h6>
+								</div>
+							</div>
+							<div class="recent-message d-flex px-4 py-3">
+								<div class="avatar avatar-lg">
+									<img src="assets/images/message/1.jpg">
+								</div>
+								<div class="name ms-4">
+									<h5 class="mb-1">John Doe</h5>
+									<h6 class="text-muted mb-0">@Doejohn</h6>
+								</div>
+							</div>
+							<div class="px-4">
+								<button class='btn btn-block btn-xl btn-primary font-bold mt-3'>Start
+									Conversation</button>
+							</div>
+						</div>
+					</div>
+				</div> -->
+	<div class="content-start transition">
+		<div class="container-fluid dashboard">
+
+			<div class="col-md-12">
+				<div class="card">
+					<di class="card-header">
+						<h4>Manage Video Category</h4>
+                        <button class="btn btn-success  float-right" ><a style="color: beige;" href="Add_video_category">Add</a></button>
+
+                    
+					<div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Sl.No</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Image</th>
+                                <th scope="col" class="text-center">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <% a.forEach((element,index)=>{%>
+                                    <tr>
+                                        <td>
+                                            <%= index + 1%>
+                                        </td>
+                                        <td>
+                                            <%=element.category_name%>
+                                        </td>
+                                        <td>
+                                            <img style="width: 60px; height: 60px;" alt="image"
+                                            src="<%=element.image_category%>">
+                                        </td>
+                                        
+                                        
+										<td class="flext-right" scope="row" >
+											<a href="/edit_videocat/<%=element._id%>"
+                                            class="btn btn-danger"
+                                            role="button">Edit</a>
+                                           
+                                            <a href="/video_category/delete/<%=element._id%>"
+                                                class="btn btn-danger"
+                                                role="button">delete</a>
+                                       
+                                        </td>
+                                        
+                                    </tr>
+
+                                    <%})%>
+
+                                <!-- <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr> -->
+                            </tbody>
+                          </table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+	</div>
+
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<div class="float-start">
+				<p>2022 &copy; Atrana</p>
+			</div>
+			<div class="float-end">
+				<p>Crafted with
+					<span class="text-danger">
+						<i class="fa fa-heart"></i> by
+						<a href="https://www.facebook.com/andreew.co.id/" class="author-footer">Andre Tri Ramadana</a>
+					</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Preloader -->
+	<!-- <div class="loader">
+		<div class="spinner-border text-light" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div> -->
+
+	<!-- Loader -->
+	<!-- <div class="loader-overlay"></div> -->
+
+	<!-- General JS Scripts -->
+	<script src="/assets/js/atrana.js"></script>
+	<script src="/assets/js/atrana.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+	<!-- JS Libraies -->
+	
+	<script src="/assets/modules/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+	<!-- Chart Js -->
+
+	<!-- Template JS File -->
+	<script src="/assets/js/script.js"></script>
+	<script src="/assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style></style>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="logo text-center">
+ 
+</div>
+<div class="wrapper">
+  <div class="inner-warpper text-center">
+    <h2 class="title">Forgot Password</h2>
+    <form action="/forgot" method="post" id="formvalidate">
+      <div class="input-group">
+        <label class="palceholder" for="userName">Email</label>
+        <input class="form-control" name="email" id="userName" type="email" placeholder="" />
+        <span class="lighting"></span>
+      </div>
+      <div class="input-group">
+        <label class="palceholder" for="userPassword">userName</label>
+        <input class="form-control" name="username" id="userPassword" type="password" placeholder="" />
+        <span class="lighting"></span>
+      </div>
+
+      <button type="submit" id="login">Forgot</button>
+      <div class="clearfix supporter">
+        {{!-- <div class="pull-left remember-me">
+          <input id="rememberMe" type="checkbox">
+          <label for="rememberMe">Remember Me</label>
+        </div> --}}
+        <a class="forgot pull-center" href="/">Back to Login</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- you don't need that :)  -->
+<!-- <div class="direction">
+  Type something in input and click submit to see the effect
+</div> -->
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
